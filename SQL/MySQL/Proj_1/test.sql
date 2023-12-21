@@ -1,10 +1,12 @@
 -- Show Databases
 SHOW DATABASES;
--- Mostrar la base de datos que estoy usando
+-- show which database is being used
 SELECT DATABASE();
--- Seleccionar un database
+-- select un database
 USE mi_base_de_datos;
--- borrar table if exists
+-- show which database is being used
+SELECT DATABASE();
+-- erase a table if exists
 -- name of table :usuarios
 DROP TABLE IF EXISTS usuarios;
 -- Crear una tabla
