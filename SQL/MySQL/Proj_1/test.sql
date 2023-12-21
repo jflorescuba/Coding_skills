@@ -9,14 +9,21 @@ SELECT DATABASE();
 -- erase a table if exists
 -- name of table :usuarios
 DROP TABLE IF EXISTS usuarios;
--- Crear una tabla
+-- Create a table
 CREATE TABLE usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50),
-    edad INT
+    edad INT,
+    driver BOOLEAN
 );
 
--- Insertar datos en la tabla
-INSERT INTO usuarios (nombre, edad) VALUES ('Juan', 30);
-INSERT INTO usuarios (nombre, edad) VALUES ('María', 25);
-INSERT INTO usuarios (nombre, edad) VALUES ('Carlos', 28);
+-- Insert values in the table
+INSERT INTO usuarios (nombre, edad, driver) VALUES ('Juan', 30, false);
+INSERT INTO usuarios (nombre, edad, driver) VALUES ('María', 25, true);
+INSERT INTO usuarios (nombre, edad, driver) VALUES ('Carlos', 28, true);
+INSERT INTO usuarios (nombre, edad, driver) VALUES ('Claudia', 35, true);
+INSERT INTO usuarios (nombre, edad, driver) VALUES ('Jose', 36, false);
+INSERT INTO usuarios (nombre, edad, driver) VALUES ('Manuel', 20, false);
+
+-- Show the table
+SELECT * FROM usuarios;
